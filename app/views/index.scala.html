@@ -1,0 +1,76 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(mes: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+
+    @*
+     * Get an `Html` object by calling the built-in Play welcome
+     * template and passing a `String` message.
+     *@
+    <!-- Google web fonts -->
+
+
+
+    <form id="upload" method="POST" action="@routes.HomeController.upload()" enctype="multipart/form-data">
+        <div id="drop">
+            Drop Here
+                <a>Browse</a>
+                <input type="file"  name="picture"/>
+
+        </div>
+
+
+        <ul>
+                <!-- The file uploads will be shown here -->
+        </ul>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <ul id="clients">
+
+
+    </ul>
+
+    <form  action="@routes.HomeController.addClient()" method="post">
+
+        <input type="text" name="name">
+        <button>Add Client</button>
+    </form>
+-->
+
+    <footer>
+        <h2><a href="http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/"><i>Tutorial:</i> Mini Ajax File Upload Form</a></h2>
+        <div id="tzine-actions">
+
+            <a id="tzine-download" href="http://tutorialzine.com/2013/05/mini-ajax-file-upload-form/" title="Download This Example!">Download</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+}
